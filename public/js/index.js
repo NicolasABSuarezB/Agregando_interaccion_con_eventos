@@ -31,4 +31,19 @@ window.onload = function () {
 
 
     container.style.display = 'block';
+
+    let $ = (e) => document.querySelector(e)
+
+    let logo = $('figure')
+    let menu = $('#menu')
+
+    logo.addEventListener('click', (e) => {
+        console.log('hiciste click en mi logo')
+        $('#menu').classList.toggle('mostrar')
+    })
+
+    menu.addEventListener('mouseleave', (e) => {
+        console.log('vuelve, que sin ti la vida se me va')
+        menu.classList.toggle('mostrar')
+    })
 }

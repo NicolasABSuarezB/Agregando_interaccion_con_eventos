@@ -113,7 +113,9 @@ figure {
   width: 200px;
   height: 100%;
   background-color: rgba(37, 37, 37, 0.88);
-  left: -200px;
+  right: -200px;
+  transition: all .5s;
+  top: 0;
 }
 
 #menu ul li {
@@ -125,7 +127,7 @@ figure {
 }
 
 #menu.mostrar {
-  left: 0
+  right: 0
 }
 
 .logoDH {

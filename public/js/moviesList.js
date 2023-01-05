@@ -14,4 +14,16 @@ window.onload = function () {
     moviesListTitulo.style.backgroundColor = 'teal';
     moviesListTitulo.style.padding = '20px';
 
+    let $ = (e) => document.querySelector(e)
+
+    let logo = $('figure')
+
+    logo.addEventListener('mouseover', (e) => {
+        body.style.backgroundColor = '#7f7f7f'
+        body.classList.add('fondoMoviesList')
+    })
+    logo.addEventListener('mouseleave', (e) => {
+        body.style.backgroundColor = '#fff'
+        body.classList.remove('fondoMoviesList')
+    })
 }
